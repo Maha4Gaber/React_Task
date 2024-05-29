@@ -1,0 +1,121 @@
+{
+    "users": [
+        {
+            "id": "c48e",
+            "name": "Mana",
+            "email": "ab3@gmail.com",
+            "phone": "123456",
+            "role": "user"
+        },
+        {
+            "id": "ebfe",
+            "name": "Mai",
+            "email": "ab4@gmail.com",
+            "phone": "123456",
+            "role": "admin"
+        },
+        {
+            "id": "8512",
+            "name": "Alaa",
+            "age": 24,
+            "email": "ammahmed@ejada.com",
+            "phone": "112224566"
+        },
+        {
+            "id": "9203",
+            "name": "youmna",
+            "age": "20",
+            "email": "youmna@ddd.com",
+            "phonenumber": "12345"
+        },
+        {
+            "id": "9245",
+            "name": "youmna",
+            "age": "20",
+            "email": "youmna@ddd.com",
+            "phonenumber": "12345"
+        },
+        {
+            "id": "5e27",
+            "name": "youmna",
+            "age": "20",
+            "email": "youmna@ddd.com",
+            "phonenumber": "12345"
+        }
+    ],
+    "doctors": [
+        {
+            "id": "1",
+            "name": "Mana",
+            "image": "",
+            "specialist": "General Principal",
+            "phone": "123",
+            "email": "ab1@gmail.com"
+        },
+        {
+            "id": "1",
+            "name": "alaa",
+            "image": "",
+            "specialist": "Pregnancy",
+            "phone": "1243",
+            "email": "ab2@gmail.com"
+        },
+        {
+            "id": "1",
+            "name": "maha",
+            "image": "",
+            "specialist": "Cardiology",
+            "phone": "1233",
+            "email": "ab3@gmail.com"
+        }
+    ],
+    "news": [
+        {
+            "image": "",
+            "date": "March 08, 2018",
+            "title": "About Amazing Technology",
+            "description": "Maecenas risus neque, placerat volutpat tempor ut, vehicula et felis.",
+            "doctoe-id": "1"
+        },
+        {
+            "image": "",
+            "date": "February 20, 2018",
+            "title": "Introducing a new healing process",
+            "description": "Fusce vel sem finibus, rhoncus massa non, aliquam velit. Nam et est ligula.",
+            "doctoe-id": "2"
+        },
+        {
+            "image": "",
+            "date": "January 27, 2018",
+            "title": "Review Annual Medical Research",
+            "description": "Vivamus non nulla semper diam cursus maximus. Pellentesque dignissim.",
+            "doctoe-id": "3"
+        }
+    ],
+    "appointment": [
+        {
+            "name": "",
+            "email": "",
+            "selectdate": "",
+            "selectdepartment": "",
+            "phonenumber": "",
+            "additional message": ""
+        },
+        {
+            "name": "",
+            "email": "",
+            "selectdate": "",
+            "selectdepartment": "",
+            "phonenumber": "",
+            "additional message": ""
+        },
+        {
+            "name": "",
+            "email": "",
+            "selectdate": "",
+            "selectdepartment": "",
+            "phonenumber": "",
+            "additional message": ""
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+
+*{
+    text-align: center;
+    margin: auto;
+}
+form{
+    margin: auto;
+}
+
+.colortext{
+    color: #a5c422;
+}
+.btn1{
+    color: white;
+    background-color:#a5c422 ;
+}
+input{
+    max-width: 100%;
+
+}
