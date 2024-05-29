@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+// import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
@@ -21,7 +22,7 @@ const Header = () => {
               </span>
               <span className="email-icon">
                 <i className="fa fa-envelope-o"></i>{" "}
-                <a href="#">info@company.com</a>
+                <NavLink href="#">info@company.com</NavLink>
               </span>
             </div>
           </div>
@@ -32,8 +33,9 @@ const Header = () => {
         role="navigation"
       >
         <div className="container">
-          <div className="navbar-header">
-            <button
+          <div className="row w-100">
+          <div className="navbar-header2 col-3">
+            {/* <button
               className="navbar-toggle"
               data-toggle="collapse"
               data-target=".navbar-collapse"
@@ -41,44 +43,45 @@ const Header = () => {
               <span className="icon icon-bar"></span>
               <span className="icon icon-bar"></span>
               <span className="icon icon-bar"></span>
-            </button>
+            </button> */}
 
-            <a href="index.html" className="navbar-brand">
+            <NavLink href="index.html" className="navbar-brand">
               <i className="fa fa-h-square"></i>Health Center
-            </a>
+            </NavLink>
           </div>
 
-          <div className="collapse navbar-collapse">
+          <div className="col-9 ">
             <ul className="nav navbar-nav navbar-right">
               <li>
-                <a href="#top" className="smoothScroll">
+                <NavLink to={'/'} href="#top" className="smoothScroll">
                   Home
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="#about" className="smoothScroll">
+                <NavLink href="#about" className="smoothScroll">
                   About Us
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="#team" className="smoothScroll">
+                <NavLink href="#team" className="smoothScroll">
                   Doctors
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="#news" className="smoothScroll">
+                <NavLink href="#news" className="smoothScroll">
                   News
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="#google-map" className="smoothScroll">
+                <NavLink href="#google-map" className="smoothScroll">
                   Contact
-                </a>
+                </NavLink>
               </li>
               <li className="appointment-btn">
-                <a href="#appointment">Make an appointment</a>
+                <NavLink href="#appointment">Make an appointment</NavLink>
               </li>
             </ul>
+          </div>
           </div>
         </div>
       </section>

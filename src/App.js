@@ -21,7 +21,15 @@ import Header from './Components/Header/Header.jsx'
 import Footer from './Components/Footer/Footer.jsx'
 import Home from './Pages/Home/Home.jsx';
 import Login from './Pages/Login/Login.jsx';
-import'./Pages/Login/Login.css';
+import './Pages/Login/Login.css';
+import Main from './Dashbourd/Main/Main.jsx';
+import AddAdmin from './Dashbourd/AddAdmin/AddAdmin.jsx';
+import AddDoctor from './Dashbourd/AddDoctor/AddDoctor.jsx';
+import AddNews from './Dashbourd/AddNews/AddNews.jsx';
+import ShowUsers from './Dashbourd/ShowUsers/ShowUsers.jsx';
+import ShowDoctors from './Dashbourd/ShowDoctors/ShowDoctors.jsx';
+import ShowNews from './Dashbourd/ShowNews/ShowNews.jsx';
+import ShowApp from './Dashbourd/ShowApp/ShowApp.jsx';
 
 function App() {
   return (
@@ -34,6 +42,16 @@ function App() {
         <Route index element={<Home />} />
         </Route>
         <Route path='/login' element={<Login />} ></Route>
+        <Route path="/dashboard" >
+          <Route index element={<Main />} />
+          <Route path='addadmin' element={<AddAdmin />} />
+          <Route path='adddoctor' element={<AddDoctor />} />
+          <Route path='addnews' element={<AddNews />} />
+          <Route path='showusers' element={<ShowUsers />} />
+          <Route path='showdoctor' element={<ShowDoctors />} />
+          <Route path='shoewnews' element={<ShowNews />} />
+          <Route path='showapp' element={<ShowApp />} />
+        </Route>
       </Routes>
     </div>
     <Footer />

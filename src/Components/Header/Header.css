@@ -1,11 +1,20 @@
 .nav{
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   padding: 10px 20px;
-  background-color: rgb(53, 53, 73);
+  width: 100%;
+  /* background-color: rgb(53, 53, 73); */
   color: antiquewhite !important;
+  flex-direction: row !important;
 }
+.nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 
 .nav .name{
   width: 20%;
   font-size: 30px ;
@@ -38,4 +47,4 @@
   font-weight: bold;
   text-align: center;
   cursor: pointer;
-}
+} */

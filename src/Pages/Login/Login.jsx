@@ -13,7 +13,7 @@ const Login = () => {
     console.log({name,age,email,phonenumber});
     try{
       await axios.get("http://localhost:3000/users",{name,age,email,phonenumber}).then((res)=>{
-        console.log(res.data);
+        console.log(user);
         setuser(res.data.filter(user => user.email ===email))
         localStorage.setItem('user',res.data.filter(user => user.email ===email))
         // setname('')

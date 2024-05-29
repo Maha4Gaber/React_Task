@@ -364,7 +364,7 @@ http://www.tooplate.com/view/2098-health
   .navbar-default .navbar-nav > .active > a:hover,
   .navbar-default .navbar-nav > .active > a:focus {
     color: #393939;
-    background-color: transparent;
+    /* background-color: transparent; */
   }
 
   .navbar-default .navbar-toggle {
@@ -379,7 +379,7 @@ http://www.tooplate.com/view/2098-health
 
   .navbar-default .navbar-toggle:hover,
   .navbar-default .navbar-toggle:focus { 
-    background-color: transparent;
+    /* background-color: transparent; */
   }
 
 
