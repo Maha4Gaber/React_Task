@@ -1055,3 +1055,17 @@ footer a:hover {
 
 }
 
+.Parent{
+  margin-top: 30px;
+  text-align: left !important;
+}
+.greencolor{
+  color: #a5c422 !important;
+}
+table thead tr th{
+  background-color: #a5c422 !important;
+}
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+  --bs-table-color-state: var(--bs-table-hover-color);
+  /* --bs-table-bg-state: #a5c422 !important; */
+}

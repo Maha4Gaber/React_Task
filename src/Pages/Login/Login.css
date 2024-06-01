@@ -1,10 +1,11 @@
 
-*{
-    text-align: center;
-    margin: auto;
-}
+
 form{
+    /* border:1px solid #a5c422; */
+    padding:  20px;
+    border-radius: 10px;
     margin: auto;
+    box-shadow: 0 0 20px #a5c422;
 }
 
 .colortext{

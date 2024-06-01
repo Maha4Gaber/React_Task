@@ -34,8 +34,8 @@ const Header = () => {
       >
         <div className="container">
           <div className="row w-100">
-          <div className="navbar-header2 col-3">
-            {/* <button
+            <div className="navbar-header2 col-3">
+              {/* <button
               className="navbar-toggle"
               data-toggle="collapse"
               data-target=".navbar-collapse"
@@ -45,43 +45,69 @@ const Header = () => {
               <span className="icon icon-bar"></span>
             </button> */}
 
-            <NavLink href="index.html" className="navbar-brand">
-              <i className="fa fa-h-square"></i>Health Center
-            </NavLink>
-          </div>
+              <NavLink href="index.html" className="navbar-brand">
+                <i className="fa fa-h-square"></i>Health Center
+              </NavLink>
+            </div>
 
-          <div className="col-9 ">
-            <ul className="nav navbar-nav navbar-right">
-              <li>
-                <NavLink to={'/'} href="#top" className="smoothScroll">
-                  Home
-                </NavLink>
-              </li>
-              <li>
-                <NavLink href="#about" className="smoothScroll">
-                  About Us
-                </NavLink>
-              </li>
-              <li>
-                <NavLink href="#team" className="smoothScroll">
-                  Doctors
-                </NavLink>
-              </li>
-              <li>
-                <NavLink href="#news" className="smoothScroll">
-                  News
-                </NavLink>
-              </li>
-              <li>
-                <NavLink href="#google-map" className="smoothScroll">
-                  Contact
-                </NavLink>
-              </li>
-              <li className="appointment-btn">
-                <NavLink href="#appointment">Make an appointment</NavLink>
-              </li>
-            </ul>
-          </div>
+            <div className="col-9 ">
+              <ul className="nav navbar-nav navbar-right">
+                <li>
+                  <NavLink to={"/"} href="#top" className="smoothScroll">
+                    Home
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink href="#about" className="smoothScroll">
+                    About Us
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink href="#team" className="smoothScroll">
+                    Doctors
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink href="#news" className="smoothScroll">
+                    News
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink href="#google-map" className="smoothScroll">
+                    Contact
+                  </NavLink>
+                </li>
+                {!localStorage.userrole && (
+                  <li>
+                    <NavLink to={"login"} className="smoothScroll">
+                      Login
+                    </NavLink>
+                  </li>
+                )}
+                {localStorage.userrole && (
+                  <>
+                    <li>
+                      <NavLink to={"/dashboard"} className="smoothScroll">
+                        Dashboard
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        onClick={() => {
+                          localStorage.userrole = "";
+                        }}
+                        className="smoothScroll"
+                      >
+                        Logout
+                      </NavLink>
+                    </li>
+                  </>
+                )}
+                <li className="appointment-btn">
+                  <NavLink href="#appointment">Make an appointment</NavLink>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
