@@ -49,18 +49,10 @@
   "doctors": [
     {
       "id": "1",
-      "name": "Mana",
-      "image": "",
-      "specialist": "General Principal",
-      "phone": "123",
-      "email": "ab1@gmail.com"
-    },
-    {
-      "id": "1",
       "name": "alaa",
       "image": "",
       "specialist": "Pregnancy",
-      "phone": "1243",
+      "phonenumber": "1243",
       "email": "ab2@gmail.com"
     },
     {
@@ -68,8 +60,15 @@
       "name": "maha",
       "image": "",
       "specialist": "Cardiology",
-      "phone": "1233",
+      "phonenumber": "1233",
       "email": "ab3@gmail.com"
+    },
+    {
+      "id": "a79d",
+      "name": "Nour",
+      "specialist": "123",
+      "email": "youmna@ddd.com",
+      "phonenumber": "0123456789"
     }
   ],
   "news": [
@@ -78,7 +77,7 @@
       "date": "March 08, 2018",
       "title": "About Amazing Technology",
       "description": "Maecenas risus neque, placerat volutpat tempor ut, vehicula et felis.",
-      "doctoe-id": "1",
+      "doctor": "ls",
       "id": "cb81"
     },
     {
@@ -86,7 +85,7 @@
       "date": "February 20, 2018",
       "title": "Introducing a new healing process",
       "description": "Fusce vel sem finibus, rhoncus massa non, aliquam velit. Nam et est ligula.",
-      "doctoe-id": "2",
+      "doctor": "ls",
       "id": "17b0"
     },
     {
@@ -94,8 +93,15 @@
       "date": "January 27, 2018",
       "title": "Review Annual Medical Research",
       "description": "Vivamus non nulla semper diam cursus maximus. Pellentesque dignissim.",
-      "doctoe-id": "3",
+      "doctor": "ls",
       "id": "2d57"
+    },
+    {
+      "id": "2cca",
+      "date": "02/06/2024",
+      "doctor": "Maha",
+      "title": "fffffff",
+      "description": "ffffffff"
     }
   ],
   "appointment": [

@@ -1,8 +1,13 @@
 import React from "react";
 import "./Header.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 // import { Link } from "react-router-dom";
 const Header = () => {
+  const navigate=useNavigate()
+  const logout =()=>{
+    // navigate('login')
+    localStorage.setItem('userrole','');
+  }
   return (
     <>
       <header>
@@ -77,32 +82,39 @@ const Header = () => {
                     Contact
                   </NavLink>
                 </li>
-                {!localStorage.userrole && (
+                {localStorage.userrole==='' && (
                   <li>
                     <NavLink to={"login"} className="smoothScroll">
                       Login
                     </NavLink>
                   </li>
                 )}
-                {localStorage.userrole && (
+                {localStorage.userrole ==='admin' && (
                   <>
                     <li>
                       <NavLink to={"/dashboard"} className="smoothScroll">
                         Dashboard
                       </NavLink>
                     </li>
-                    <li>
+                    </>
+                )}
+                {localStorage.userrole !=='' && (
+                  <>
+                  <li>
                       <NavLink
+                      to={'/login'}
                         onClick={() => {
-                          localStorage.userrole = "";
+                          logout()
                         }}
                         className="smoothScroll"
                       >
                         Logout
                       </NavLink>
                     </li>
+
                   </>
-                )}
+                )
+                }
                 <li className="appointment-btn">
                   <NavLink href="#appointment">Make an appointment</NavLink>
                 </li>
