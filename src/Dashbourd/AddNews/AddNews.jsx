@@ -4,9 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 const AddNews = () => {
   // const [user,setuser]=useState([]);
-  const [name,setname]=useState('');
   const [title,settitle]=useState('');
-  const [email,setemail]=useState('');
   const [description,setdescription]=useState('');
   const navigate =useNavigate()
 

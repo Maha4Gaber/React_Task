@@ -1,9 +1,9 @@
 import React from "react";
 import "./Header.css";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink,  } from "react-router-dom";
 // import { Link } from "react-router-dom";
 const Header = () => {
-  const navigate=useNavigate()
+  // const navigate=useNavigate()
   const logout =()=>{
     // navigate('login')
     localStorage.setItem('userrole','');

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import img1 from '../../assets/images/about-bg.jpg'
 const Home = () => {
   return (
     <div>
@@ -11,29 +11,10 @@ const Home = () => {
                               <div className="item item-first">
                                    <div className="caption">
                                         <div className="col-md-offset-1 col-md-10">
+                                             {/* <img className="" src={img1} /> */}
                                              <h3>Let's make your life happier</h3>
                                              <h1>Healthy Living</h1>
                                              <a href="#team" className="section-btn btn btn-default smoothScroll">Meet Our Doctors</a>
-                                        </div>
-                                   </div>
-                              </div>
-
-                              <div className="item item-second">
-                                   <div className="caption">
-                                        <div className="col-md-offset-1 col-md-10">
-                                             <h3>Aenean luctus lobortis tellus</h3>
-                                             <h1>New Lifestyle</h1>
-                                             <a href="#about" className="section-btn btn btn-default btn-gray smoothScroll">More About Us</a>
-                                        </div>
-                                   </div>
-                              </div>
-
-                              <div className="item item-third">
-                                   <div className="caption">
-                                        <div className="col-md-offset-1 col-md-10">
-                                             <h3>Pellentesque nec libero nisi</h3>
-                                             <h1>Your Health Benefits</h1>
-                                             <a href="#news" className="section-btn btn btn-default btn-blue smoothScroll">Read Stories</a>
                                         </div>
                                    </div>
                               </div>
