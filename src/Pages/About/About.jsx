@@ -3,6 +3,7 @@ import React from 'react';
 
 const About = () => {
   return (
+
     <div className="container">
                <div className="row">
 
@@ -25,6 +26,7 @@ const About = () => {
                     
                </div>
           </div>
+
   
   );
 }
