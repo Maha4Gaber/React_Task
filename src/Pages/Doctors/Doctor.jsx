@@ -19,7 +19,7 @@ const Doctor = () => {
 
   return (
     <div> KKK
-      <section id="team" data-stellar-background-ratio="1">
+      <section id="team">
         <div className="container">
           <div className="row">
             <div className="col-md-6 col-sm-6">
