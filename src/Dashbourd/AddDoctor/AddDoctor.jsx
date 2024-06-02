@@ -3,19 +3,19 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const AddDoctor = () => {
-  const [user,setuser]=useState([]);
+  // const [user,setuser]=useState([]);
   const [name,setname]=useState('');
   const [specialist,setspecialist]=useState('');
   const [email,setemail]=useState('');
   const [phonenumber,setphonenumber]=useState('');
   const navigate =useNavigate()
 
-  const getdata = async()=>{
+  const senddata = async()=>{
     // console.log({name,specialist,email,phonenumber});
     try{
-      await axios.post("http://localhost:3000/users",{name,specialist,email,phonenumber}).then((res)=>{
+      await axios.post("http://localhost:3000/doctors",{name,specialist,email,phonenumber}).then((res)=>{
         console.log(res);
-        navigate('/dashboard/showusers')
+        navigate('/dashboard/showdoctor')
       });
 
     }catch(error){
@@ -26,7 +26,7 @@ const AddDoctor = () => {
 
   return (
     <div>
-      <h1 className=" greencolor text-center">AddAdmin</h1>
+      <h1 className=" greencolor text-center">Add Doctors</h1>
       <div className=" container ">
       <form onSubmit={(e)=>{
         e.preventDefault()
@@ -96,8 +96,8 @@ const AddDoctor = () => {
           </div>
         </div>
         <button type="submit" onClick={()=>{
-          getdata()
-        }} className="btn btn1">Add Admin</button>
+          senddata()
+        }} className="btn btn1">Add Doctor</button>
       </form>
       </div>
     </div>

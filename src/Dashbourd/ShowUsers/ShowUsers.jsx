@@ -43,7 +43,7 @@ const ShowUsers = () => {
                   <th className="">Age</th>
                   <th className="">Email</th>
                   <th className="">Phone</th>
-                  <th className="">Phone</th>
+                  <th className=""></th>
                   
                 </tr>
               </thead>

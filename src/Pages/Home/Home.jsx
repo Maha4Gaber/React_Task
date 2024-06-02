@@ -1,39 +1,21 @@
 import React from 'react';
-
+import img1 from '../../assets/images/about-bg.jpg'
 const Home = () => {
   return (
     <div>
-     <section id="home" class="slider" data-stellar-background-ratio="0.5">
-          <div class="container">
-               <div class="row">
 
-                         <div class="owl-carousel owl-theme">
-                              <div class="item item-first">
-                                   <div class="caption">
-                                        <div class="col-md-offset-1 col-md-10">
+    
+          <div className="container">
+               <div className="row">
+
+                         <div className="">
+                              <div className="item item-first">
+                                   <div className="caption">
+                                        <div className="col-md-offset-1 col-md-10">
+                                             <img className="" src={img1} />
                                              <h3>Let's make your life happier</h3>
                                              <h1>Healthy Living</h1>
-                                             <a href="#team" class="section-btn btn btn-default smoothScroll">Meet Our Doctors</a>
-                                        </div>
-                                   </div>
-                              </div>
-
-                              <div class="item item-second">
-                                   <div class="caption">
-                                        <div class="col-md-offset-1 col-md-10">
-                                             <h3>Aenean luctus lobortis tellus</h3>
-                                             <h1>New Lifestyle</h1>
-                                             <a href="#about" class="section-btn btn btn-default btn-gray smoothScroll">More About Us</a>
-                                        </div>
-                                   </div>
-                              </div>
-
-                              <div class="item item-third">
-                                   <div class="caption">
-                                        <div class="col-md-offset-1 col-md-10">
-                                             <h3>Pellentesque nec libero nisi</h3>
-                                             <h1>Your Health Benefits</h1>
-                                             <a href="#news" class="section-btn btn btn-default btn-blue smoothScroll">Read Stories</a>
+                                             <a href="#team" className="section-btn btn btn-default smoothScroll">Meet Our Doctors</a>
                                         </div>
                                    </div>
                               </div>
@@ -41,7 +23,7 @@ const Home = () => {
 
                </div>
           </div>
-     </section>
+    
     </div>
   );
 }
