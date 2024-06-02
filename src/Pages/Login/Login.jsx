@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
@@ -9,14 +10,17 @@ const Login = () => {
   const [email,setemail]=useState('');
   const [phonenumber,setphonenumber]=useState('');
 
+  const navigate =useNavigate();
   const getdata = async()=>{
-    console.log({name,age,email,phonenumber});
+    // console.log({name,age,email,phonenumber});
     try{
       await axios.get("http://localhost:3000/users",{name,age,email,phonenumber}).then((res)=>{
-        // console.log(user);
+        // console.log(res.data);
         setuser(res.data.filter(user => user.email ===email))
-        // console.log(user);
-        localStorage.setItem('userrole',user[0].role)
+        // console.log(user[0]&&user[0].role?user[0].role:'user');
+        localStorage.setItem('userrole',res.data.filter(user => user.email ===email)[0].role)
+        localStorage.setItem('username',res.data.filter(user => user.email ===email)[0].name)
+        navigate('/')
         // setname('')
       });
 
