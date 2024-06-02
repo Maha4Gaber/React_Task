@@ -1,5 +1,5 @@
 import React from 'react';
-// import img1 from '../../assets/images/about-bg.jpg'
+import img1 from '../../assets/images/author-image.jpg'
 
 const About = () => {
   return (
@@ -14,7 +14,8 @@ const About = () => {
                                    <p>Sed a dignissim lacus. Quisque fermentum est non orci commodo, a luctus urna mattis. Ut placerat, diam a tempus vehicula.</p>
                               </div>
                               <figure className="profile wow fadeInUp" data-wow-delay="1s">
-                                   <img src="images/author-image.jpg" className="img-responsive" alt=""/>
+                                   {/* <img src="images/author-image.jpg" className="img-responsive" alt=""/> */}
+                                   { <img className="" src={img1} /> }
                                    <figcaption>
                                         <h3>Dr. Neil Jackson</h3>
                                         <p>General Principal</p>
