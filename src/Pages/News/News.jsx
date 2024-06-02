@@ -24,30 +24,34 @@ const News = () => {
           getdata()
         }, []);
   return (
-      <section id="news" data-stellar-background-ratio="2.5">
+
+    <div>
+       {/* <!-- NEWS --> */}
+     <section id="news" >
           <div class="container">
                <div class="row">
-                   <div class="col-md-12 col-sm-12">
+
+                    <div class="col-md-12 col-sm-12">
                          {/* <!-- SECTION TITLE --> */}
                          <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
                               <h2>Latest News</h2>
                          </div>
                     </div>
                     {news.map((newsItem, index) => (
-                     <div className="col-md-4 col-sm-6" key={index}>
-                     <div className="news-thumb wow fadeInUp" data-wow-delay={`${0.4 + index * 0.2}s`}>
-                       <a href="news-detail.html">
-                         <img src={news.image} className="img-responsive" alt="" />
-                       </a>
+                     <div className="col-4" key={index}>
+                     <div className="news-thumb wow fadeInUp">
+                       <p href="news-detail.html">
+                         <img src={img1} className="img-responsive w-100" alt="" />
+                       </p>
                        <div className="news-info">
-                         <span>{news.date}</span>
-                         <h3><a href="news-detail.html">{news.title}</a></h3>
-                         <p>{news.description}</p>
+                         <span>{newsItem.date}</span>
+                         <h3><p href="newsItem-detail.html">{newsItem.title}</p></h3>
+                         <p>{newsItem.description}</p>
                          <div className="author">
-                           <img src={news.authorImage} className="img-responsive" alt="" />
+                           <img src={newsItem.authorImage} className="img-responsive" alt="" />
                            <div className="author-info">
-                             <h5>{news.author}</h5>
-                             <p>{news.role}</p>
+                             <h5>{newsItem.author}</h5>
+                             <p>{newsItem.role}</p>
                            </div>
                          </div>
                        </div>
@@ -57,8 +61,9 @@ const News = () => {
                </div>
           </div>
      </section>
- 
+ </div>
   );
+  
 };
 
 export default News;

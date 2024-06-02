@@ -35,7 +35,6 @@ import Appointment from './Pages/Appointment/Appointment.jsx';
 import About from './Pages/About/About.jsx';
 import News from './Pages/News/News.jsx';
 
-import News from './Pages/News/News.jsx';
 
 function App() {
   return (
