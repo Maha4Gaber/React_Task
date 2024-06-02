@@ -408,14 +408,14 @@ header span i {
   width: 100%;
 }
 
-.slider .owl-dots {
+.slider  {
     position: absolute;
     top: 575px;
     width: 100%;
     justify-content: center;
 }
 
-.owl-theme .owl-dots .owl-dot span {
+ span {
   width: 8px;
   height: 8px;
   margin: 5px 7px;
@@ -427,12 +427,12 @@ header span i {
   border-radius: 30px;
 }
 
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+ .owl-dots .owl-dot.active span,  .owl-dots .owl-dot:hover span {
   background-color: #ffffff;
   border-color: transparent;
 }
 
-.slider .caption {
+ .caption {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -440,10 +440,10 @@ header span i {
   background-color: rgba(20,20,20,0.2);
   height: 100%;
   color: #fff;
-  cursor: e-resize;
+  /* cursor: e-resize; */
 }
 
-.slider .item {
+ .item {
   background-position: inherit;
   background-repeat: no-repeat;
   background-attachment: local;
@@ -451,7 +451,7 @@ header span i {
   height: 650px;
 }
 
-.slider .item-first {
+ .item-first {
   background-image: url(./assets/images/slider1.jpg);
 }
 
