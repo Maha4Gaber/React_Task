@@ -63,25 +63,27 @@ const Header = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink href="#about" className="smoothScroll">
+                  <NavLink to={'about'} href="#about" className="smoothScroll">
                     About Us
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink href="#team" className="smoothScroll">
+                  <NavLink to={'/doctor'} href="#team" className="smoothScroll">
                     Doctors
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"news"} className="smoothScroll">
+
+                  <NavLink to={'/news'} href="#news" className="smoothScroll">
+
                     News
                   </NavLink>
                 </li>
-                <li>
+                {/* <li>
                   <NavLink href="#google-map" className="smoothScroll">
                     Contact
                   </NavLink>
-                </li>
+                </li> */}
                 {localStorage.userrole==='' && (
                   <li>
                     <NavLink to={"login"} className="smoothScroll">
@@ -116,7 +118,7 @@ const Header = () => {
                 )
                 }
                 <li className="appointment-btn">
-                  <NavLink href="#appointment">Make an appointment</NavLink>
+                  <NavLink to={'/appointment'} href="#appointment">Make an appointment</NavLink>
                 </li>
               </ul>
             </div>
