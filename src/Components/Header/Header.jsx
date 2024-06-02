@@ -73,7 +73,9 @@ const Header = () => {
                   </NavLink>
                 </li>
                 <li>
+
                   <NavLink to={'/news'} href="#news" className="smoothScroll">
+
                     News
                   </NavLink>
                 </li>

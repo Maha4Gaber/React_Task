@@ -3,6 +3,7 @@ import img1 from '../../assets/images/author-image.jpg'
 
 const About = () => {
   return (
+
     <div className="container">
                <div className="row">
 
@@ -26,6 +27,7 @@ const About = () => {
                     
                </div>
           </div>
+
   
   );
 }
