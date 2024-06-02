@@ -66,7 +66,7 @@ const Appointment = () => {
           </div>
         </div>
         <div className="row mb-3">
-          <label htmlFor="email" className="col-sm-4 text-start col-form-label colortext fs-3">selectdepartment</label>
+          <label htmlFor="email" className="col-sm-4 text-start col-form-label colortext fs-3">department</label>
           <div className="col-sm-8">
             <input
               type="text"
@@ -82,7 +82,7 @@ const Appointment = () => {
           </div>
         </div>
         <div className="row mb-3">
-          <label htmlFor="phonenumber" className="col-sm-4 text-start col-form-label colortext fs-3">PhoneNumber</label>
+          <label htmlFor="phonenumber" className="col-sm-4 text-start col-form-label colortext fs-3">Phone</label>
           <div className="col-sm-8">
             <input
               type="text"
@@ -98,7 +98,7 @@ const Appointment = () => {
           </div>
         </div>
         <div className="row mb-3">
-          <label htmlFor="phonenumber" className="col-sm-4 text-start col-form-label colortext fs-3">additionalmessage</label>
+          <label htmlFor="phonenumber" className="col-sm-4 text-start col-form-label colortext fs-3">message</label>
           <div className="col-sm-8">
             <input
               type="text"
