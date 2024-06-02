@@ -30,6 +30,10 @@ import ShowUsers from './Dashbourd/ShowUsers/ShowUsers.jsx';
 import ShowDoctors from './Dashbourd/ShowDoctors/ShowDoctors.jsx';
 import ShowNews from './Dashbourd/ShowNews/ShowNews.jsx';
 import ShowApp from './Dashbourd/ShowApp/ShowApp.jsx';
+import Doctor from './Pages/Doctors/Doctor.jsx';
+import Appointment from './Pages/Appointment/Appointment.jsx';
+import About from './Pages/About/About.jsx';
+import News from './Pages/News/News.jsx';
 
 function App() {
   return (
@@ -42,6 +46,11 @@ function App() {
         <Route index element={<Home />} />
         </Route>
         <Route path='/login' element={<Login />} ></Route>
+        <Route path='/doctor' element={<Doctor />} ></Route>
+        <Route path='/appointment' element={<Appointment />} ></Route>
+        <Route path='/about' element={<About />} ></Route>
+        <Route path='/appointment' element={<Appointment />} ></Route>
+        <Route path='/news' element={<News />} ></Route>
         <Route path="/dashboard" >
           <Route index element={<Main />} />
           <Route path='addadmin' element={<AddAdmin />} />
