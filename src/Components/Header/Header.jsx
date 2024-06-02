@@ -67,11 +67,14 @@ const Header = () => {
                     About Us
                   </NavLink>
                 </li>
+                {localStorage.userrole==='' && (
                 <li>
                   <NavLink to={''} href="#team" className="smoothScroll">
                     Doctors
                   </NavLink>
                 </li>
+                                )}
+
                 <li>
                   <NavLink href="#news" className="smoothScroll">
                     News

@@ -30,6 +30,7 @@ import ShowUsers from './Dashbourd/ShowUsers/ShowUsers.jsx';
 import ShowDoctors from './Dashbourd/ShowDoctors/ShowDoctors.jsx';
 import ShowNews from './Dashbourd/ShowNews/ShowNews.jsx';
 import ShowApp from './Dashbourd/ShowApp/ShowApp.jsx';
+import Doctor from './Pages/Doctors/Doctor.jsx';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
         <Route index element={<Home />} />
         </Route>
         <Route path='/login' element={<Login />} ></Route>
+        <Route path='/doctor' element={<Doctor />} ></Route>
         <Route path="/dashboard" >
           <Route index element={<Main />} />
           <Route path='addadmin' element={<AddAdmin />} />
