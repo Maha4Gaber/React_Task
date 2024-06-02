@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css'
+import img1 from '../../assets/images/news-image.jpg'
 const Footer = () => {
 return (
   <>
@@ -24,7 +25,7 @@ return (
                             <h4 className="wow fadeInUp" data-wow-delay="0.4s">Latest News</h4>
                             <div className="latest-stories">
                                   <div className="stories-image">
-                                      <a href="#"><img src="../../assets/images/news-image.jpg" className="img-responsive" alt="" /></a>
+                                      <a href="#"><img src={img1} className="img-responsive" alt="" /></a>
                                   </div>
                                   <div className="stories-info">
                                       <a href="#"><h5>Amazing Technology</h5></a>
@@ -34,7 +35,7 @@ return (
 
                             <div className="latest-stories">
                                   <div className="stories-image">
-                                      <a href="#"><img src="../../assets/images/news-image.jpg" className="img-responsive" alt="" /></a>
+                                      <a href="#"><img src={img1} className="img-responsive" alt="" /></a>
                                   </div>
                                   <div className="stories-info">
                                       <a href="#"><h5>New Healing Process</h5></a>
