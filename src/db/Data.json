@@ -98,12 +98,16 @@
   ],
   "appointment": [
     {
+      "selectdate": "",
+
+
       "name": "",
       "email": "",
-      "selectdate": "",
       "selectdepartment": "",
       "phonenumber": "",
-      "additional message": "",
+      "message": "",
+
+      
       "id": "2f89"
     },
     {

@@ -63,12 +63,12 @@ const Header = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink href="#about" className="smoothScroll">
+                  <NavLink to={'about'} href="#about" className="smoothScroll">
                     About Us
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink href="#team" className="smoothScroll">
+                  <NavLink to={''} href="#team" className="smoothScroll">
                     Doctors
                   </NavLink>
                 </li>
