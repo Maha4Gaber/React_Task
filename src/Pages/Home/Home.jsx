@@ -1,5 +1,6 @@
 import React from 'react';
 import img1 from '../../assets/images/about-bg.jpg'
+import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <div>
@@ -15,7 +16,7 @@ const Home = () => {
                                              {/* <img className="" src={img1} /> */}
                                              <h3>Let's make your life happier</h3>
                                              <h1>Healthy Living</h1>
-                                             <a href="#team" className="section-btn btn btn-default smoothScroll">Meet Our Doctors</a>
+                                             <Link to={"/doctor"} href="#team" className="section-btn btn btn-default smoothScroll">Meet Our Doctors</Link>
                                         </div>
                                    </div>
                               </div>
