@@ -15,13 +15,9 @@ const Login = () => {
     // console.log({name,age,email,phonenumber});
     try{
       await axios.get("http://localhost:3000/users",{name,age,email,phonenumber}).then((res)=>{
-        // console.log(res.data);
-        // setuser(res.data.filter(user => user.email ===email))
-        // console.log(user[0]&&user[0].role?user[0].role:'user');
         localStorage.setItem('userrole',res.data.filter(user => user.email ===email)[0].role)
         localStorage.setItem('username',res.data.filter(user => user.email ===email)[0].name)
         navigate('/')
-        // setname('')
       });
 
     }catch(error){

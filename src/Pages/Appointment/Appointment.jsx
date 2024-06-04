@@ -66,13 +66,13 @@ const Appointment = () => {
           </div>
         </div>
         <div className="row mb-3">
-          <label htmlFor="email" className="col-sm-4 text-start col-form-label colortext fs-3">department</label>
+          <label htmlFor="email" className="col-sm-4 text-start col-form-label colortext fs-3">Department</label>
           <div className="col-sm-8">
             <input
               type="text"
               className="form-control"
-              id="email"
-              name="email"
+              // id="email"
+              // name="email"
               value={selectdepartment}
               onChange={(e)=>{
                 setselectdepartment(e.target.value)
@@ -98,13 +98,13 @@ const Appointment = () => {
           </div>
         </div>
         <div className="row mb-3">
-          <label htmlFor="phonenumber" className="col-sm-4 text-start col-form-label colortext fs-3">message</label>
+          <label htmlFor="phonenumber" className="col-sm-4 text-start col-form-label colortext fs-3">Message</label>
           <div className="col-sm-8">
             <input
               type="text"
               className="form-control"
-              id="phonenumber"
-              name="phonenumber"
+              // id="phonenumber"
+              // name="phonenumber"
               value={additionalmessage}
               onChange={(e)=>{
                 setadditionalmessage(e.target.value)

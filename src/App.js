@@ -21,7 +21,7 @@ import Header from './Components/Header/Header.jsx'
 import Footer from './Components/Footer/Footer.jsx'
 import Home from './Pages/Home/Home.jsx';
 import Login from './Pages/Login/Login.jsx';
-import './Pages/Login/Login.css';
+// import './Pages/Login/Login.css';
 import Main from './Dashbourd/Main/Main.jsx';
 import AddAdmin from './Dashbourd/AddAdmin/AddAdmin.jsx';
 import AddDoctor from './Dashbourd/AddDoctor/AddDoctor.jsx';
