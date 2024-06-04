@@ -106,33 +106,6 @@
   ],
   "appointment": [
     {
-      "name": "",
-      "email": "",
-      "selectdate": "",
-      "selectdepartment": "",
-      "phonenumber": "",
-      "additional message": "",
-      "id": "2f89"
-    },
-    {
-      "name": "",
-      "email": "",
-      "selectdate": "",
-      "selectdepartment": "",
-      "phonenumber": "",
-      "additional message": "",
-      "id": "9648"
-    },
-    {
-      "name": "",
-      "email": "",
-      "selectdate": "",
-      "selectdepartment": "",
-      "phonenumber": "",
-      "additional message": "",
-      "id": "6382"
-    },
-    {
       "id": "134b",
       "name": "hamza",
       "Email": "dd@gmail.com",
